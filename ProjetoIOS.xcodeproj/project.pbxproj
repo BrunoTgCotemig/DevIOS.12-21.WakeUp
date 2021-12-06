@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5EA615B5275EACA900941EAE /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA615B4275EACA900941EAE /* GradientView.swift */; };
+		5EA615BD275EBFCD00941EAE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA615BC275EBFCD00941EAE /* logo.png */; };
 		DCA402DC273D3201005F2711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA402DB273D3201005F2711 /* AppDelegate.swift */; };
 		DCA402DE273D3201005F2711 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA402DD273D3201005F2711 /* SceneDelegate.swift */; };
 		DCA402E0273D3201005F2711 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA402DF273D3201005F2711 /* ViewController.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		5EA615B4275EACA900941EAE /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		5EA615BC275EBFCD00941EAE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		DCA402D8273D3201005F2711 /* ProjetoIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA402DB273D3201005F2711 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCA402DD273D3201005F2711 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,22 @@
 			path = AppWorkflow;
 			sourceTree = "<group>";
 		};
+		5EA615BA275EBF7700941EAE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5EA615BB275EBF8200941EAE /* IMG */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		5EA615BB275EBF8200941EAE /* IMG */ = {
+			isa = PBXGroup;
+			children = (
+				5EA615BC275EBFCD00941EAE /* logo.png */,
+			);
+			path = IMG;
+			sourceTree = "<group>";
+		};
 		DCA402CF273D3201005F2711 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +131,7 @@
 		DCA402DA273D3201005F2711 /* ProjetoIOS */ = {
 			isa = PBXGroup;
 			children = (
+				5EA615BA275EBF7700941EAE /* Assets */,
 				5EA615B6275EB22800941EAE /* ViewControllers */,
 				DCA402DB273D3201005F2711 /* AppDelegate.swift */,
 				DCA402DD273D3201005F2711 /* SceneDelegate.swift */,
@@ -193,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCA402E8273D3202005F2711 /* LaunchScreen.storyboard in Resources */,
+				5EA615BD275EBFCD00941EAE /* logo.png in Resources */,
 				DCB9D4DD273DABDD004095F5 /* GoogleService-Info.plist in Resources */,
 				DCA402E5273D3202005F2711 /* Assets.xcassets in Resources */,
 				DCA402E3273D3201005F2711 /* Main.storyboard in Resources */,
