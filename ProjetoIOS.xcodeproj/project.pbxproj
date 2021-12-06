@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,17 @@
 		DCA402E8273D3202005F2711 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA402E6273D3202005F2711 /* LaunchScreen.storyboard */; };
 		DCA402F5273D3F1F005F2711 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA402F4273D3F1F005F2711 /* Gradient.swift */; };
 		DCA402F8273D42BB005F2711 /* SenhaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA402F7273D42BB005F2711 /* SenhaViewController.swift */; };
+		DCAA013B274304CA00BE0F01 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA013A274304CA00BE0F01 /* Constants.swift */; };
+		DCAA013E27430A0C00BE0F01 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA013D27430A0C00BE0F01 /* TabBarController.swift */; };
+		DCAA014327432CA700BE0F01 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA014227432CA700BE0F01 /* PerfilViewController.swift */; };
+		DCAA014727432DE100BE0F01 /* NovoEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA014627432DE100BE0F01 /* NovoEmailViewController.swift */; };
+		DCAA014A27432E0100BE0F01 /* NovaSenhaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA014927432E0100BE0F01 /* NovaSenhaViewController.swift */; };
+		DCB9D4D4273D9D8A004095F5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9D4D3273D9D8A004095F5 /* GradientView.swift */; };
+		DCB9D4D8273DAABD004095F5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DCB9D4D7273DAABD004095F5 /* FirebaseAuth */; };
+		DCB9D4DA273DAABD004095F5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = DCB9D4D9273DAABD004095F5 /* FirebaseDatabase */; };
+		DCB9D4DD273DABDD004095F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCB9D4DC273DABDD004095F5 /* GoogleService-Info.plist */; };
+		DCE917292741BC12006D4373 /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE917282741BC12006D4373 /* CadastroViewController.swift */; };
+		DCE9172D2741BF95006D4373 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9172C2741BF95006D4373 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +39,15 @@
 		DCA402E9273D3202005F2711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCA402F4273D3F1F005F2711 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		DCA402F7273D42BB005F2711 /* SenhaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenhaViewController.swift; sourceTree = "<group>"; };
+		DCAA013A274304CA00BE0F01 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DCAA013D27430A0C00BE0F01 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		DCAA014227432CA700BE0F01 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		DCAA014627432DE100BE0F01 /* NovoEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovoEmailViewController.swift; sourceTree = "<group>"; };
+		DCAA014927432E0100BE0F01 /* NovaSenhaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaSenhaViewController.swift; sourceTree = "<group>"; };
+		DCB9D4D3273D9D8A004095F5 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = ../../Recursos/GradientView.swift; sourceTree = "<group>"; };
+		DCB9D4DC273DABDD004095F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DCE917282741BC12006D4373 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
+		DCE9172C2741BF95006D4373 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB9D4DA273DAABD004095F5 /* FirebaseDatabase in Frameworks */,
+				DCB9D4D8273DAABD004095F5 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,12 +85,21 @@
 				DCA402DB273D3201005F2711 /* AppDelegate.swift */,
 				DCA402DD273D3201005F2711 /* SceneDelegate.swift */,
 				DCA402DF273D3201005F2711 /* ViewController.swift */,
+				DCE917282741BC12006D4373 /* CadastroViewController.swift */,
+				DCA402F7273D42BB005F2711 /* SenhaViewController.swift */,
+				DCAA013D27430A0C00BE0F01 /* TabBarController.swift */,
+				DCE9172C2741BF95006D4373 /* HomeViewController.swift */,
+				DCAA014227432CA700BE0F01 /* PerfilViewController.swift */,
+				DCAA014627432DE100BE0F01 /* NovoEmailViewController.swift */,
+				DCAA014927432E0100BE0F01 /* NovaSenhaViewController.swift */,
+				DCB9D4DC273DABDD004095F5 /* GoogleService-Info.plist */,
 				DCA402E1273D3201005F2711 /* Main.storyboard */,
 				DCA402E4273D3202005F2711 /* Assets.xcassets */,
 				DCA402E6273D3202005F2711 /* LaunchScreen.storyboard */,
 				DCA402E9273D3202005F2711 /* Info.plist */,
 				DCA402F4273D3F1F005F2711 /* Gradient.swift */,
-				DCA402F7273D42BB005F2711 /* SenhaViewController.swift */,
+				DCB9D4D3273D9D8A004095F5 /* GradientView.swift */,
+				DCAA013A274304CA00BE0F01 /* Constants.swift */,
 			);
 			path = ProjetoIOS;
 			sourceTree = "<group>";
@@ -89,6 +120,10 @@
 			dependencies = (
 			);
 			name = ProjetoIOS;
+			packageProductDependencies = (
+				DCB9D4D7273DAABD004095F5 /* FirebaseAuth */,
+				DCB9D4D9273DAABD004095F5 /* FirebaseDatabase */,
+			);
 			productName = ProjetoIOS;
 			productReference = DCA402D8273D3201005F2711 /* ProjetoIOS.app */;
 			productType = "com.apple.product-type.application";
@@ -116,6 +151,9 @@
 				Base,
 			);
 			mainGroup = DCA402CF273D3201005F2711;
+			packageReferences = (
+				DCB9D4D6273DAABD004095F5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = DCA402D9273D3201005F2711 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -131,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCA402E8273D3202005F2711 /* LaunchScreen.storyboard in Resources */,
+				DCB9D4DD273DABDD004095F5 /* GoogleService-Info.plist in Resources */,
 				DCA402E5273D3202005F2711 /* Assets.xcassets in Resources */,
 				DCA402E3273D3201005F2711 /* Main.storyboard in Resources */,
 			);
@@ -145,9 +184,17 @@
 			files = (
 				DCA402E0273D3201005F2711 /* ViewController.swift in Sources */,
 				DCA402DC273D3201005F2711 /* AppDelegate.swift in Sources */,
+				DCB9D4D4273D9D8A004095F5 /* GradientView.swift in Sources */,
+				DCE9172D2741BF95006D4373 /* HomeViewController.swift in Sources */,
 				DCA402DE273D3201005F2711 /* SceneDelegate.swift in Sources */,
 				DCA402F5273D3F1F005F2711 /* Gradient.swift in Sources */,
+				DCAA014327432CA700BE0F01 /* PerfilViewController.swift in Sources */,
+				DCE917292741BC12006D4373 /* CadastroViewController.swift in Sources */,
 				DCA402F8273D42BB005F2711 /* SenhaViewController.swift in Sources */,
+				DCAA014727432DE100BE0F01 /* NovoEmailViewController.swift in Sources */,
+				DCAA014A27432E0100BE0F01 /* NovaSenhaViewController.swift in Sources */,
+				DCAA013E27430A0C00BE0F01 /* TabBarController.swift in Sources */,
+				DCAA013B274304CA00BE0F01 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +394,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DCB9D4D6273DAABD004095F5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DCB9D4D7273DAABD004095F5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCB9D4D6273DAABD004095F5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		DCB9D4D9273DAABD004095F5 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCB9D4D6273DAABD004095F5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DCA402D0273D3201005F2711 /* Project object */;
 }
