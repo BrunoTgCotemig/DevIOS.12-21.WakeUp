@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="faf-qc-YWg">
-                                <rect key="frame" x="10" y="500" width="394" height="258"/>
+                                <rect key="frame" x="10" y="212" width="394" height="258"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Endereco de email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UfH-Wb-kxO">
                                         <rect key="frame" x="20" y="105.5" width="354" height="50"/>
@@ -34,7 +34,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUG-P4-ybe">
-                                        <rect key="frame" x="20" y="185.5" width="354" height="50"/>
+                                        <rect key="frame" x="20" y="185.5" width="322" height="50"/>
                                         <color key="backgroundColor" red="0.26274509800000001" green="0.0" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="q6p-PV-eYD"/>
@@ -51,9 +51,9 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="1fX-Pk-TG2" secondAttribute="trailing" constant="20" id="7jy-d4-gB4"/>
-                                    <constraint firstAttribute="trailing" secondItem="pUG-P4-ybe" secondAttribute="trailing" constant="20" id="7te-db-3nb"/>
                                     <constraint firstItem="1fX-Pk-TG2" firstAttribute="top" secondItem="faf-qc-YWg" secondAttribute="top" constant="30" id="Cii-fW-SUR"/>
                                     <constraint firstItem="pUG-P4-ybe" firstAttribute="leading" secondItem="faf-qc-YWg" secondAttribute="leading" constant="20" id="Ea1-hK-3no"/>
+                                    <constraint firstAttribute="trailing" secondItem="pUG-P4-ybe" secondAttribute="trailing" constant="52" id="LFU-Px-Hy9"/>
                                     <constraint firstItem="1fX-Pk-TG2" firstAttribute="leading" secondItem="faf-qc-YWg" secondAttribute="leading" constant="20" id="bap-39-xwl"/>
                                     <constraint firstAttribute="trailing" secondItem="UfH-Wb-kxO" secondAttribute="trailing" constant="20" id="g1m-de-JxK"/>
                                     <constraint firstItem="pUG-P4-ybe" firstAttribute="top" secondItem="UfH-Wb-kxO" secondAttribute="bottom" constant="30" id="g5k-1z-vEx"/>
@@ -65,10 +65,10 @@
                         <viewLayoutGuide key="safeArea" id="FeR-oP-Myy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="faf-qc-YWg" firstAttribute="top" secondItem="FeR-oP-Myy" secondAttribute="top" constant="500" id="7ZV-pt-Bwn"/>
                             <constraint firstItem="FeR-oP-Myy" firstAttribute="trailing" secondItem="faf-qc-YWg" secondAttribute="trailing" constant="10" id="NWL-5x-jEX"/>
+                            <constraint firstAttribute="bottom" secondItem="faf-qc-YWg" secondAttribute="bottom" constant="372" id="W0q-rO-5T6"/>
+                            <constraint firstItem="faf-qc-YWg" firstAttribute="top" secondItem="JPP-9f-vpQ" secondAttribute="top" constant="212" id="aKH-4b-lcG"/>
                             <constraint firstItem="faf-qc-YWg" firstAttribute="leading" secondItem="FeR-oP-Myy" secondAttribute="leading" constant="10" id="jjI-GU-3yE"/>
-                            <constraint firstItem="FeR-oP-Myy" firstAttribute="bottom" secondItem="faf-qc-YWg" secondAttribute="bottom" constant="50" id="tiP-QL-rVt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="e7c-Bm-GD5"/>
@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dKK-ef-J3T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-464" y="256"/>
+            <point key="canvasLocation" x="-465.21739130434787" y="255.80357142857142"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -281,13 +281,20 @@
                                     <constraint firstItem="dvB-Ot-9Ml" firstAttribute="top" secondItem="L2j-gY-w81" secondAttribute="bottom" constant="30" id="yhh-3H-uPo"/>
                                 </constraints>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="f8I-Mp-uwm">
+                                <rect key="frame" x="87" y="78" width="248" height="214"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="82t-uz-5zq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="f8I-Mp-uwm" firstAttribute="top" secondItem="hnN-um-qD4" secondAttribute="topMargin" constant="77.5" id="BOh-If-SyT"/>
                             <constraint firstItem="82t-uz-5zq" firstAttribute="trailing" secondItem="guZ-z3-2cW" secondAttribute="trailing" constant="10" id="DuE-sI-ciT"/>
+                            <constraint firstItem="f8I-Mp-uwm" firstAttribute="leading" secondItem="hnN-um-qD4" secondAttribute="leadingMargin" constant="67" id="LVc-NL-U0u"/>
                             <constraint firstItem="guZ-z3-2cW" firstAttribute="leading" secondItem="82t-uz-5zq" secondAttribute="leading" constant="10" id="atX-Zq-ZUz"/>
+                            <constraint firstItem="guZ-z3-2cW" firstAttribute="top" secondItem="f8I-Mp-uwm" secondAttribute="bottom" constant="7.5" id="eku-ma-SWg"/>
                             <constraint firstItem="guZ-z3-2cW" firstAttribute="top" secondItem="82t-uz-5zq" secondAttribute="top" constant="300" id="k3V-32-jBt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f8I-Mp-uwm" secondAttribute="trailing" constant="59" id="kY7-Cy-jch"/>
                             <constraint firstItem="82t-uz-5zq" firstAttribute="bottom" secondItem="guZ-z3-2cW" secondAttribute="bottom" constant="50" id="pjs-Cz-byO"/>
                         </constraints>
                     </view>
@@ -301,7 +308,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hZ1-FU-qUh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="530" y="256"/>
+            <point key="canvasLocation" x="528.98550724637687" y="255.80357142857142"/>
         </scene>
         <!--Alarme-->
         <scene sceneID="acS-NP-c2X">
