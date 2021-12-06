@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EA615B5275EACA900941EAE /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA615B4275EACA900941EAE /* GradientView.swift */; };
 		DCA402DC273D3201005F2711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA402DB273D3201005F2711 /* AppDelegate.swift */; };
 		DCA402DE273D3201005F2711 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA402DD273D3201005F2711 /* SceneDelegate.swift */; };
 		DCA402E0273D3201005F2711 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA402DF273D3201005F2711 /* ViewController.swift */; };
@@ -20,7 +21,6 @@
 		DCAA014327432CA700BE0F01 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA014227432CA700BE0F01 /* PerfilViewController.swift */; };
 		DCAA014727432DE100BE0F01 /* NovoEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA014627432DE100BE0F01 /* NovoEmailViewController.swift */; };
 		DCAA014A27432E0100BE0F01 /* NovaSenhaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAA014927432E0100BE0F01 /* NovaSenhaViewController.swift */; };
-		DCB9D4D4273D9D8A004095F5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB9D4D3273D9D8A004095F5 /* GradientView.swift */; };
 		DCB9D4D8273DAABD004095F5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DCB9D4D7273DAABD004095F5 /* FirebaseAuth */; };
 		DCB9D4DA273DAABD004095F5 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = DCB9D4D9273DAABD004095F5 /* FirebaseDatabase */; };
 		DCB9D4DD273DABDD004095F5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCB9D4DC273DABDD004095F5 /* GoogleService-Info.plist */; };
@@ -29,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5EA615B4275EACA900941EAE /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		DCA402D8273D3201005F2711 /* ProjetoIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA402DB273D3201005F2711 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCA402DD273D3201005F2711 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +45,6 @@
 		DCAA014227432CA700BE0F01 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
 		DCAA014627432DE100BE0F01 /* NovoEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovoEmailViewController.swift; sourceTree = "<group>"; };
 		DCAA014927432E0100BE0F01 /* NovaSenhaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovaSenhaViewController.swift; sourceTree = "<group>"; };
-		DCB9D4D3273D9D8A004095F5 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = ../../Recursos/GradientView.swift; sourceTree = "<group>"; };
 		DCB9D4DC273DABDD004095F5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DCE917282741BC12006D4373 /* CadastroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
 		DCE9172C2741BF95006D4373 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -98,8 +98,8 @@
 				DCA402E6273D3202005F2711 /* LaunchScreen.storyboard */,
 				DCA402E9273D3202005F2711 /* Info.plist */,
 				DCA402F4273D3F1F005F2711 /* Gradient.swift */,
-				DCB9D4D3273D9D8A004095F5 /* GradientView.swift */,
 				DCAA013A274304CA00BE0F01 /* Constants.swift */,
+				5EA615B4275EACA900941EAE /* GradientView.swift */,
 			);
 			path = ProjetoIOS;
 			sourceTree = "<group>";
@@ -184,7 +184,6 @@
 			files = (
 				DCA402E0273D3201005F2711 /* ViewController.swift in Sources */,
 				DCA402DC273D3201005F2711 /* AppDelegate.swift in Sources */,
-				DCB9D4D4273D9D8A004095F5 /* GradientView.swift in Sources */,
 				DCE9172D2741BF95006D4373 /* HomeViewController.swift in Sources */,
 				DCA402DE273D3201005F2711 /* SceneDelegate.swift in Sources */,
 				DCA402F5273D3F1F005F2711 /* Gradient.swift in Sources */,
@@ -193,6 +192,7 @@
 				DCA402F8273D42BB005F2711 /* SenhaViewController.swift in Sources */,
 				DCAA014727432DE100BE0F01 /* NovoEmailViewController.swift in Sources */,
 				DCAA014A27432E0100BE0F01 /* NovaSenhaViewController.swift in Sources */,
+				5EA615B5275EACA900941EAE /* GradientView.swift in Sources */,
 				DCAA013E27430A0C00BE0F01 /* TabBarController.swift in Sources */,
 				DCAA013B274304CA00BE0F01 /* Constants.swift in Sources */,
 			);
