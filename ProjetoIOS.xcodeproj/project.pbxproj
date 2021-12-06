@@ -121,8 +121,8 @@
 				DCA402E4273D3202005F2711 /* Assets.xcassets */,
 				DCA402E6273D3202005F2711 /* LaunchScreen.storyboard */,
 				DCA402E9273D3202005F2711 /* Info.plist */,
-				DCA402F4273D3F1F005F2711 /* Gradient.swift */,
 				DCAA013A274304CA00BE0F01 /* Constants.swift */,
+				DCA402F4273D3F1F005F2711 /* Gradient.swift */,
 				5EA615B4275EACA900941EAE /* GradientView.swift */,
 			);
 			path = ProjetoIOS;
