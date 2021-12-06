@@ -63,6 +63,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EA615B6275EB22800941EAE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5EA615B9275EB39E00941EAE /* AppWorkflow */,
+				5EA615B8275EB2CD00941EAE /* Login-SignUp */,
+				DCA402DF273D3201005F2711 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5EA615B8275EB2CD00941EAE /* Login-SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA014627432DE100BE0F01 /* NovoEmailViewController.swift */,
+				DCAA014927432E0100BE0F01 /* NovaSenhaViewController.swift */,
+				DCA402F7273D42BB005F2711 /* SenhaViewController.swift */,
+				DCE917282741BC12006D4373 /* CadastroViewController.swift */,
+			);
+			path = "Login-SignUp";
+			sourceTree = "<group>";
+		};
+		5EA615B9275EB39E00941EAE /* AppWorkflow */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA014227432CA700BE0F01 /* PerfilViewController.swift */,
+				DCAA013D27430A0C00BE0F01 /* TabBarController.swift */,
+				DCE9172C2741BF95006D4373 /* HomeViewController.swift */,
+			);
+			path = AppWorkflow;
+			sourceTree = "<group>";
+		};
 		DCA402CF273D3201005F2711 = {
 			isa = PBXGroup;
 			children = (
@@ -82,16 +113,9 @@
 		DCA402DA273D3201005F2711 /* ProjetoIOS */ = {
 			isa = PBXGroup;
 			children = (
+				5EA615B6275EB22800941EAE /* ViewControllers */,
 				DCA402DB273D3201005F2711 /* AppDelegate.swift */,
 				DCA402DD273D3201005F2711 /* SceneDelegate.swift */,
-				DCA402DF273D3201005F2711 /* ViewController.swift */,
-				DCE917282741BC12006D4373 /* CadastroViewController.swift */,
-				DCA402F7273D42BB005F2711 /* SenhaViewController.swift */,
-				DCAA013D27430A0C00BE0F01 /* TabBarController.swift */,
-				DCE9172C2741BF95006D4373 /* HomeViewController.swift */,
-				DCAA014227432CA700BE0F01 /* PerfilViewController.swift */,
-				DCAA014627432DE100BE0F01 /* NovoEmailViewController.swift */,
-				DCAA014927432E0100BE0F01 /* NovaSenhaViewController.swift */,
 				DCB9D4DC273DABDD004095F5 /* GoogleService-Info.plist */,
 				DCA402E1273D3201005F2711 /* Main.storyboard */,
 				DCA402E4273D3202005F2711 /* Assets.xcassets */,
