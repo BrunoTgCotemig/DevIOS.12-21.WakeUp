@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5E049724275FB06500A1A02B /* VC_Lembretes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E049723275FB06500A1A02B /* VC_Lembretes.swift */; };
+		5E049727275FBF6500A1A02B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E049726275FBF6500A1A02B /* Model.swift */; };
+		5E049729275FC26C00A1A02B /* ViewControllerExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E049728275FC26C00A1A02B /* ViewControllerExtended.swift */; };
+		5E04972B275FC44100A1A02B /* VC_Lembretes_Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E04972A275FC44100A1A02B /* VC_Lembretes_Add.swift */; };
 		5EA615B5275EACA900941EAE /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA615B4275EACA900941EAE /* GradientView.swift */; };
 		5EA615BD275EBFCD00941EAE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA615BC275EBFCD00941EAE /* logo.png */; };
 		DCA402DC273D3201005F2711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA402DB273D3201005F2711 /* AppDelegate.swift */; };
@@ -32,6 +35,9 @@
 
 /* Begin PBXFileReference section */
 		5E049723275FB06500A1A02B /* VC_Lembretes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Lembretes.swift; sourceTree = "<group>"; };
+		5E049726275FBF6500A1A02B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5E049728275FC26C00A1A02B /* ViewControllerExtended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtended.swift; sourceTree = "<group>"; };
+		5E04972A275FC44100A1A02B /* VC_Lembretes_Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Lembretes_Add.swift; sourceTree = "<group>"; };
 		5EA615B4275EACA900941EAE /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		5EA615BC275EBFCD00941EAE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		DCA402D8273D3201005F2711 /* ProjetoIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,12 +73,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E049725275FBF4C00A1A02B /* Lembretes */ = {
+			isa = PBXGroup;
+			children = (
+				5E049723275FB06500A1A02B /* VC_Lembretes.swift */,
+				5E04972A275FC44100A1A02B /* VC_Lembretes_Add.swift */,
+				5E049726275FBF6500A1A02B /* Model.swift */,
+			);
+			path = Lembretes;
+			sourceTree = "<group>";
+		};
 		5EA615B6275EB22800941EAE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				5EA615B9275EB39E00941EAE /* AppWorkflow */,
 				5EA615B8275EB2CD00941EAE /* Login-SignUp */,
 				DCA402DF273D3201005F2711 /* ViewController.swift */,
+				5E049728275FC26C00A1A02B /* ViewControllerExtended.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -91,10 +108,10 @@
 		5EA615B9275EB39E00941EAE /* AppWorkflow */ = {
 			isa = PBXGroup;
 			children = (
+				5E049725275FBF4C00A1A02B /* Lembretes */,
 				DCAA014227432CA700BE0F01 /* PerfilViewController.swift */,
 				DCAA013D27430A0C00BE0F01 /* TabBarController.swift */,
 				DCE9172C2741BF95006D4373 /* HomeViewController.swift */,
-				5E049723275FB06500A1A02B /* VC_Lembretes.swift */,
 			);
 			path = AppWorkflow;
 			sourceTree = "<group>";
@@ -229,12 +246,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E049727275FBF6500A1A02B /* Model.swift in Sources */,
 				DCA402E0273D3201005F2711 /* ViewController.swift in Sources */,
 				DCA402DC273D3201005F2711 /* AppDelegate.swift in Sources */,
+				5E04972B275FC44100A1A02B /* VC_Lembretes_Add.swift in Sources */,
 				DCE9172D2741BF95006D4373 /* HomeViewController.swift in Sources */,
 				DCA402DE273D3201005F2711 /* SceneDelegate.swift in Sources */,
 				DCA402F5273D3F1F005F2711 /* Gradient.swift in Sources */,
 				DCAA014327432CA700BE0F01 /* PerfilViewController.swift in Sources */,
+				5E049729275FC26C00A1A02B /* ViewControllerExtended.swift in Sources */,
 				DCE917292741BC12006D4373 /* CadastroViewController.swift in Sources */,
 				DCA402F8273D42BB005F2711 /* SenhaViewController.swift in Sources */,
 				5E049724275FB06500A1A02B /* VC_Lembretes.swift in Sources */,
