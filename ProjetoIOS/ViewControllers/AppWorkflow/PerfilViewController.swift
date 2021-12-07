@@ -10,8 +10,8 @@ import Firebase
 
 class PerfilViewController: UIViewController {
 
-    var BD = UserDefaults.standard
-    let key = "WakeUP"
+    //var BD = UserDefaults.standard
+    //let key = "WakeUP"
     
     func alert(title:String, message:String){
         let alertController:UIAlertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -32,8 +32,8 @@ class PerfilViewController: UIViewController {
         
         do {
             try Auth.auth().signOut()
-            let data = try! JSONEncoder().encode("")
-            BD.set(data, forKey: self.key)
+            //let data = try! JSONEncoder().encode("")
+            //BD.set(data, forKey: self.key)
             
         } catch {
             alert(title: "Erro", message: "Erro ao tentar sair")

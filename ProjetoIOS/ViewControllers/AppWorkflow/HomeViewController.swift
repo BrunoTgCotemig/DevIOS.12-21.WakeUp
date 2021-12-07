@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    var BD = UserDefaults.standard
-    let key = "WakeUP"
+    //var BD = UserDefaults.standard
+    //let key = "WakeUP"
     
 }
