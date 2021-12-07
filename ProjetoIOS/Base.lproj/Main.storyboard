@@ -618,12 +618,20 @@ TGVtYnJldGVzEDo
                                 <state key="normal" title="Adicionar">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="AddData:" destination="8Fk-OD-0yc" eventType="touchUpInside" id="7IJ-mO-D8o"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NKw-Q5-ZMJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="gBF-5f-ll2"/>
+                    <connections>
+                        <outlet property="xContent" destination="a6K-6G-o1G" id="QMn-AP-TzJ"/>
+                        <outlet property="xDate" destination="EZn-Xe-fob" id="bqh-Ab-t2G"/>
+                        <outlet property="xTitle" destination="q8K-6X-2Oz" id="yNT-0I-RaP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oPS-bj-07R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
