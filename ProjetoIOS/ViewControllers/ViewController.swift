@@ -18,18 +18,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtSenha: UITextField!
     
-    var BD = UserDefaults.standard
-    let key = "WakeUP"
-    var user: [Usuario] = []
+    //var BD = UserDefaults.standard
+    //let key = "WakeUP"
+    //var user: [Usuario] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
+   
+    
+    
+    
+    
     
     override func viewDidAppear(_ animated: Bool) {
         
-        if let data = BD.value(forKey: key) as? Data{
+        /*if let data = BD.value(forKey: key) as? Data{
             let usuario = try! JSONDecoder().decode([Usuario].self, from: data)
             user.append(contentsOf: usuario)
             
@@ -42,9 +47,15 @@ class ViewController: UIViewController {
                     }
                 }
             }
-        }
+        }*/
+        
         
     }
+    
+    
+    
+    
+    
     
     func alert(title:String, message:String){
         let alertController:UIAlertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -53,6 +64,12 @@ class ViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
+    
+    
+    
+    
+    
+    
     func transicao(){
         
         let TabBar = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.TabBarController) as? TabBarController
@@ -60,6 +77,12 @@ class ViewController: UIViewController {
         view.window?.makeKeyAndVisible()
         
     }
+    
+    
+    
+    
+    
+    
     
     @IBAction func btnEntrar(_ sender: Any) {
         if (txtEmail.text == "" || txtSenha.text == "") {
@@ -72,15 +95,22 @@ class ViewController: UIViewController {
                 if error != nil{
                     self.alert(title: "Erro", message: error!.localizedDescription)
                 }else{
-                    let UserInfo = Auth.auth().currentUser
-                    let user = try! JSONEncoder().encode(UserInfo!.uid)
-                    self.BD.set(user, forKey: self.key)
+                    //let UserInfo = Auth.auth().currentUser
+                    //let user = try! JSONEncoder().encode(UserInfo!.uid)
+                    //self.BD.set(user, forKey: self.key)
                     self.transicao()
                 }
             }
             
         }
     }
+    
+    
+    
+    
+    
+    
+    
     
 }
 

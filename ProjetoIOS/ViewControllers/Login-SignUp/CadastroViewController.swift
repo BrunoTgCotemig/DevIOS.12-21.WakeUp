@@ -17,9 +17,17 @@ class CadastroVC: UIViewController {
     @IBOutlet weak var txtConfirmarSenha: UITextField!
     
     private let database = Database.database().reference()
-    var BD = UserDefaults.standard
-    let key = "WakeUP"
+    //var BD = UserDefaults.standard
+    //let key = "WakeUP"
+    
+    
+    
     var data: [Usuario] = []
+    
+    
+    
+    
+    
     
     func alert(title:String, message:String){
         let alertController:UIAlertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -28,6 +36,12 @@ class CadastroVC: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
+    
+    
+    
+    
+    
+    
     func transicao(){
         
         let TabBar = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.TabBarController) as? TabBarController
@@ -35,6 +49,14 @@ class CadastroVC: UIViewController {
         view.window?.makeKeyAndVisible()
         
     }
+    
+    
+    
+    
+    
+    
+    
+    
     
     @IBAction func Registrar(_ sender: Any) {
         
@@ -53,9 +75,9 @@ class CadastroVC: UIViewController {
                     self.alert(title: "Erro", message: error!.localizedDescription)
                 }else{
                     self.database.child(self.txtEmail.text!).setValue(self.txtNome.text!)
-                    let data = Usuario(email: self.txtEmail.text!, senha: self.txtSenha.text!)
-                    let user = try! JSONEncoder().encode(data)
-                    self.BD.set(user, forKey: self.key)
+                    //let data = Usuario(email: self.txtEmail.text!, senha: self.txtSenha.text!)
+                    //let user = try! JSONEncoder().encode(data)
+                    //self.BD.set(user, forKey: self.key)
                     self.transicao()
                 }
             }
