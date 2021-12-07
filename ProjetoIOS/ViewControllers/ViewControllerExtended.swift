@@ -27,12 +27,12 @@ class ViewControllerExtended: UIViewController {
     
     
 
-    internal func CheckFor_WithRegex(a:String, b:String)-> Bool{
+    internal func Regex_FindFirst( input:String, regex: String)-> String{
         
-        let i = b.match("[0-9]+")
-            
+        let i = input.match(regex)
         let dummy:String = i[0][0]
-        if(b.count == dummy.count){return true} else {return false}
+        return dummy
+        
     }
     
 
