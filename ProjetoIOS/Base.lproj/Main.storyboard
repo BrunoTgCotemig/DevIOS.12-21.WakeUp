@@ -149,7 +149,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="A1E-o4-EAK" secondAttribute="bottom" constant="9" id="1ic-HV-ekd"/>
                                     <constraint firstAttribute="trailing" secondItem="Nhl-wB-y6k" secondAttribute="trailing" constant="20" id="2cM-ga-Zcj"/>
@@ -387,47 +387,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="rXW-PC-NWg">
-                                <rect key="frame" x="10" y="64.5" width="394" height="199"/>
-                                <color key="tintColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="XL4-rG-5Zu"/>
-                                </constraints>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CND-Lj-acb">
-                                <rect key="frame" x="20" y="413" width="374" height="300"/>
+                                <rect key="frame" x="20" y="228" width="374" height="395"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IuY-SV-G7m">
-                                        <rect key="frame" x="20" y="30" width="334" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="yCm-lX-hZ9"/>
-                                        </constraints>
+                                        <rect key="frame" x="20" y="142" width="149" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="Mudar Email">
+                                        <state key="normal" title="Mudar E-mail">
                                             <color key="titleColor" red="0.26274509800000001" green="0.0" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="Si2-GZ-Z9g" kind="show" id="4gL-tI-SWc"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OyZ-jN-zTD">
-                                        <rect key="frame" x="20" y="100" width="334" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="XYr-Ip-tF1"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="Mudar Senha">
-                                            <color key="titleColor" red="0.26274509800000001" green="0.0" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="6pE-5O-tme" kind="show" id="qQL-tg-1EN"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ulc-8S-juE">
-                                        <rect key="frame" x="20" y="230" width="334" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="0Au-BL-5Q2"/>
-                                        </constraints>
+                                        <rect key="frame" x="20" y="322" width="102" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="Logout">
                                             <color key="titleColor" systemColor="systemRedColor"/>
@@ -436,31 +410,66 @@
                                             <action selector="btnLogout:" destination="RiS-wo-qlT" eventType="touchUpInside" id="yLn-gr-tlS"/>
                                         </connections>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YRx-K9-ND6">
+                                        <rect key="frame" x="8" y="8" width="83" height="93"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuário logado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMZ-Ak-m6n">
+                                        <rect key="frame" x="129" y="44" width="208" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZQ-E2-0eR">
+                                        <rect key="frame" x="20" y="109" width="334" height="2"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OyZ-jN-zTD">
+                                        <rect key="frame" x="20" y="185" width="149" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <state key="normal" title="Mudar Senha">
+                                            <color key="titleColor" red="0.26274509800000001" green="0.0" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="6pE-5O-tme" kind="show" id="qQL-tg-1EN"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Ulc-8S-juE" secondAttribute="bottom" constant="30" id="0qY-ro-Lm5"/>
-                                    <constraint firstItem="OyZ-jN-zTD" firstAttribute="leading" secondItem="CND-Lj-acb" secondAttribute="leading" constant="20" id="4sb-Ce-B8H"/>
-                                    <constraint firstItem="IuY-SV-G7m" firstAttribute="top" secondItem="CND-Lj-acb" secondAttribute="top" constant="30" id="7tz-Ae-EMq"/>
-                                    <constraint firstAttribute="height" constant="300" id="IvY-pj-Cgo"/>
-                                    <constraint firstItem="IuY-SV-G7m" firstAttribute="leading" secondItem="CND-Lj-acb" secondAttribute="leading" constant="20" id="Okb-zi-aSx"/>
-                                    <constraint firstItem="Ulc-8S-juE" firstAttribute="leading" secondItem="CND-Lj-acb" secondAttribute="leading" constant="20" id="Oof-tb-IeJ"/>
-                                    <constraint firstItem="OyZ-jN-zTD" firstAttribute="top" secondItem="IuY-SV-G7m" secondAttribute="bottom" constant="30" id="PyQ-Vi-ZJ1"/>
-                                    <constraint firstAttribute="trailing" secondItem="IuY-SV-G7m" secondAttribute="trailing" constant="20" id="h0l-4u-fS2"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ulc-8S-juE" secondAttribute="trailing" constant="20" id="kbk-EO-aet"/>
-                                    <constraint firstAttribute="trailing" secondItem="OyZ-jN-zTD" secondAttribute="trailing" constant="20" id="vp5-gI-Jet"/>
+                                    <constraint firstItem="YRx-K9-ND6" firstAttribute="top" secondItem="CND-Lj-acb" secondAttribute="top" constant="7.5" id="7Dq-RE-jZw"/>
+                                    <constraint firstItem="OyZ-jN-zTD" firstAttribute="top" secondItem="CND-Lj-acb" secondAttribute="top" constant="185" id="Jua-6I-pYg"/>
+                                    <constraint firstItem="Ulc-8S-juE" firstAttribute="leading" secondItem="CND-Lj-acb" secondAttribute="leading" constant="20" id="KD0-Jq-AIx"/>
+                                    <constraint firstAttribute="trailing" secondItem="OyZ-jN-zTD" secondAttribute="trailing" constant="205" id="SF3-7h-Q9i"/>
+                                    <constraint firstAttribute="bottom" secondItem="YRx-K9-ND6" secondAttribute="bottom" constant="293.5" id="W79-oc-guu"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ulc-8S-juE" secondAttribute="trailing" constant="252" id="WLc-uf-cwX"/>
+                                    <constraint firstItem="Ulc-8S-juE" firstAttribute="top" secondItem="CND-Lj-acb" secondAttribute="top" constant="322" id="a3S-s6-Zge"/>
+                                    <constraint firstItem="IuY-SV-G7m" firstAttribute="top" secondItem="CND-Lj-acb" secondAttribute="top" constant="142" id="ark-Nf-7If"/>
+                                    <constraint firstAttribute="bottom" secondItem="OyZ-jN-zTD" secondAttribute="bottom" constant="170" id="bgK-aj-HFy"/>
+                                    <constraint firstItem="eMZ-Ak-m6n" firstAttribute="leading" secondItem="CND-Lj-acb" secondAttribute="leading" constant="129" id="ccJ-KB-20F"/>
+                                    <constraint firstAttribute="bottom" secondItem="eMZ-Ak-m6n" secondAttribute="bottom" constant="330" id="cfj-Js-Mag"/>
+                                    <constraint firstItem="YRx-K9-ND6" firstAttribute="leading" secondItem="CND-Lj-acb" secondAttribute="leading" constant="8" id="d5E-aq-Qzk"/>
+                                    <constraint firstItem="dZQ-E2-0eR" firstAttribute="leading" secondItem="CND-Lj-acb" secondAttribute="leading" constant="20" id="fCX-FP-XwE"/>
+                                    <constraint firstItem="dZQ-E2-0eR" firstAttribute="top" secondItem="CND-Lj-acb" secondAttribute="top" constant="109" id="g79-JM-o8k"/>
+                                    <constraint firstAttribute="trailing" secondItem="IuY-SV-G7m" secondAttribute="trailing" constant="205" id="gAu-4v-S1z"/>
+                                    <constraint firstAttribute="trailing" secondItem="dZQ-E2-0eR" secondAttribute="trailing" constant="20" id="giD-sn-qhO"/>
+                                    <constraint firstAttribute="trailing" secondItem="YRx-K9-ND6" secondAttribute="trailing" constant="283" id="haO-Sx-iYi"/>
+                                    <constraint firstAttribute="bottom" secondItem="dZQ-E2-0eR" secondAttribute="bottom" constant="284" id="iIU-2J-8tH"/>
+                                    <constraint firstAttribute="trailing" secondItem="eMZ-Ak-m6n" secondAttribute="trailing" constant="37" id="kZc-ba-c8c"/>
+                                    <constraint firstAttribute="bottom" secondItem="IuY-SV-G7m" secondAttribute="bottom" constant="218" id="oPf-AW-zx3"/>
+                                    <constraint firstItem="eMZ-Ak-m6n" firstAttribute="top" secondItem="CND-Lj-acb" secondAttribute="top" constant="44" id="oYr-me-hZI"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ulc-8S-juE" secondAttribute="bottom" constant="33" id="spP-F4-J2s"/>
+                                    <constraint firstItem="IuY-SV-G7m" firstAttribute="leading" secondItem="CND-Lj-acb" secondAttribute="leading" constant="20" id="tI8-IQ-Rnd"/>
+                                    <constraint firstItem="OyZ-jN-zTD" firstAttribute="leading" secondItem="CND-Lj-acb" secondAttribute="leading" constant="20" id="vsp-sa-ynq"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="j1V-GB-bJu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="rXW-PC-NWg" firstAttribute="leading" secondItem="j1V-GB-bJu" secondAttribute="leading" constant="10" id="FqR-Ph-Tye"/>
-                            <constraint firstItem="rXW-PC-NWg" firstAttribute="top" secondItem="j1V-GB-bJu" secondAttribute="top" constant="20" id="Gl5-Fc-Ty2"/>
-                            <constraint firstItem="j1V-GB-bJu" firstAttribute="trailing" secondItem="rXW-PC-NWg" secondAttribute="trailing" constant="10" id="HfA-Lb-jDn"/>
-                            <constraint firstItem="CND-Lj-acb" firstAttribute="leading" secondItem="j1V-GB-bJu" secondAttribute="leading" constant="20" id="Nay-D6-0Io"/>
-                            <constraint firstItem="j1V-GB-bJu" firstAttribute="bottom" secondItem="CND-Lj-acb" secondAttribute="bottom" constant="100" id="ZIC-lX-da8"/>
-                            <constraint firstItem="j1V-GB-bJu" firstAttribute="trailing" secondItem="CND-Lj-acb" secondAttribute="trailing" constant="20" id="c0U-zr-24a"/>
+                            <constraint firstItem="CND-Lj-acb" firstAttribute="leading" secondItem="j1V-GB-bJu" secondAttribute="leading" constant="20" id="9Ho-d6-JVg"/>
+                            <constraint firstItem="j1V-GB-bJu" firstAttribute="trailing" secondItem="CND-Lj-acb" secondAttribute="trailing" constant="20" id="9fa-k4-Gvp"/>
+                            <constraint firstItem="j1V-GB-bJu" firstAttribute="bottom" secondItem="CND-Lj-acb" secondAttribute="bottom" constant="190" id="VZv-YK-wDp"/>
+                            <constraint firstItem="CND-Lj-acb" firstAttribute="top" secondItem="j1V-GB-bJu" secondAttribute="top" constant="184" id="cm1-I3-Pqa"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Perfil" image="person" catalog="system" id="hX1-01-OFH">
@@ -469,7 +478,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FVM-Q7-Xo5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1654" y="2127"/>
+            <point key="canvasLocation" x="1653.6231884057972" y="2126.7857142857142"/>
         </scene>
         <!--Novo Email View Controller-->
         <scene sceneID="n8r-P4-By3">
@@ -519,7 +528,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="XHB-yi-F1Z" secondAttribute="trailing" constant="20" id="1Xb-iz-ObR"/>
                                     <constraint firstItem="CfV-tX-Wqt" firstAttribute="top" secondItem="PIA-Pa-BkZ" secondAttribute="top" constant="30" id="BvD-z5-0Co"/>
@@ -611,7 +620,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstItem="3hr-Ul-Moa" firstAttribute="top" secondItem="WUH-Hv-7S4" secondAttribute="bottom" constant="30" id="AHp-l0-p7H"/>
                                     <constraint firstAttribute="trailing" secondItem="twg-Dj-Vvm" secondAttribute="trailing" constant="20" id="IEg-iH-Ufb"/>
@@ -662,6 +671,12 @@
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
