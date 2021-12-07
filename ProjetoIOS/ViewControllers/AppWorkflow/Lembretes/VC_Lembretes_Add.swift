@@ -9,6 +9,20 @@ import UIKit
 
 class VC_Lembretes_Add: ViewControllerExtended {
 
+    
+    //
+    // Outlets
+    //
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

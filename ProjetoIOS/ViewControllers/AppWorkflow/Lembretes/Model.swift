@@ -15,6 +15,6 @@ struct DB_DataModel{
     var content: String
     
     
-    init(inTile:String, inDate:String, inContent:String){    title=inTile; date=inDate; content=inContent;     }
+    init(inTitle:String, inDate:String, inContent:String){    title=inTitle; date=inDate; content=inContent;     }
     
 }
