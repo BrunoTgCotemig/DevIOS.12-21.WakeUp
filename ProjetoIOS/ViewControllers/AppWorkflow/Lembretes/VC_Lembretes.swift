@@ -23,6 +23,29 @@ class VC_Lembretes: ViewControllerExtended, UITableViewDataSource, UITableViewDe
     
     internal func DB_RetrieveStoredData(){
         
+        func FilterDate(inDate:String) -> String{
+            
+            if(inDate != "")
+            {
+                let date = Regex_FindFirst(input: inDate, regex: "[0-9]{4}[-][0-9]{2}[-][0-9]{2}")
+                let hours = Regex_FindFirst(input: inDate, regex: "[0-9]{2}:[0-9]{2}:[0-9]{2}")
+                
+                let final = "Data: "+date+"     Horário: "+hours
+                
+                return final
+                
+            }else{
+                
+                GenerateAlertBox(in_title: "Erro", in_message: "String de data nula", in_ButtonText: "OK")
+                return ""
+            }
+
+        }
+        
+        //[0-9]{4}[-][0-9]{2}[-][0-9]{2}
+        //[0-9]{2}[:][0-9]{2}[:][0-9]{2}
+        //123456@123456.com
+        
         
         DB_R.observe(DataEventType.value, with: { [self](snapshot) in
             
@@ -34,12 +57,19 @@ class VC_Lembretes: ViewControllerExtended, UITableViewDataSource, UITableViewDe
                     let data_object = data.value as? [String: AnyObject]
                     
                     let data_title = data_object?["title"]
-                    let data_date = data_object?["date"]
                     let data_content = data_object?["content"]
                     
+                    
+                    let data_date = data_object?["date"]
+                    let x:String = data_date as? String ?? ""
+                    let y:String = FilterDate(inDate: x)
+                    
+                    let i = data_title as? String ?? ""
+                    
+                    
                     let final = DB_DataModel(
-                        inTitle: data_title as? String ?? "",
-                        inDate: data_date as? String ?? "",
+                        inTitle: "Titulo: "+i,
+                        inDate: y,
                         inContent: data_content as? String ?? ""
                         )
                     

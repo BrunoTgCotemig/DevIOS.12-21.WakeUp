@@ -25,13 +25,19 @@ class ViewControllerExtended: UIViewController {
 
     
     
-    
 
     internal func Regex_FindFirst( input:String, regex: String)-> String{
         
         let i = input.match(regex)
-        let dummy:String = i[0][0]
-        return dummy
+        
+        do{
+            
+            let dummy:String = i[0][0]
+            return dummy
+            
+        }catch{ return "invalid operation" }
+        
+
         
     }
     
