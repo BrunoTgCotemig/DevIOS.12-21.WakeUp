@@ -1,4 +1,16 @@
 .DS_Store
 *.xcuserstate
 project.xcworkspace/
-xcuserdata/
+
+
+
+/xcuserdata
+*/xcuserdata
+
+
+ProjetoIOS.xcodeproj/project.xcworkspace/xcuserdata/
+/ProjetoIOS.xcodeproj/project.xcworkspace/xcuserdata/
+
+
+
+ProjetoIOS.xcodeproj/project.xcworkspace/xcuserdata/btg-main.xcuserdatad/UserInterfaceState.xcuserstate
