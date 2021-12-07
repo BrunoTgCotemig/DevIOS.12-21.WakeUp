@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E049724275FB06500A1A02B /* VC_Lembretes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E049723275FB06500A1A02B /* VC_Lembretes.swift */; };
 		5EA615B5275EACA900941EAE /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA615B4275EACA900941EAE /* GradientView.swift */; };
 		5EA615BD275EBFCD00941EAE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA615BC275EBFCD00941EAE /* logo.png */; };
 		DCA402DC273D3201005F2711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA402DB273D3201005F2711 /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E049723275FB06500A1A02B /* VC_Lembretes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Lembretes.swift; sourceTree = "<group>"; };
 		5EA615B4275EACA900941EAE /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		5EA615BC275EBFCD00941EAE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		DCA402D8273D3201005F2711 /* ProjetoIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,7 @@
 				DCAA014227432CA700BE0F01 /* PerfilViewController.swift */,
 				DCAA013D27430A0C00BE0F01 /* TabBarController.swift */,
 				DCE9172C2741BF95006D4373 /* HomeViewController.swift */,
+				5E049723275FB06500A1A02B /* VC_Lembretes.swift */,
 			);
 			path = AppWorkflow;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				DCAA014327432CA700BE0F01 /* PerfilViewController.swift in Sources */,
 				DCE917292741BC12006D4373 /* CadastroViewController.swift in Sources */,
 				DCA402F8273D42BB005F2711 /* SenhaViewController.swift in Sources */,
+				5E049724275FB06500A1A02B /* VC_Lembretes.swift in Sources */,
 				DCAA014727432DE100BE0F01 /* NovoEmailViewController.swift in Sources */,
 				DCAA014A27432E0100BE0F01 /* NovaSenhaViewController.swift in Sources */,
 				5EA615B5275EACA900941EAE /* GradientView.swift in Sources */,
