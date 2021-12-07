@@ -1,5 +1,5 @@
 //
-//  VC_Lembretes.swift
+//  VC_Lembretes_Add.swift
 //  ProjetoIOS
 //
 //  Created by BTG on 07/12/21.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class VC_Lembretes: UIViewController {
+class VC_Lembretes_Add: ViewControllerExtended {
 
     override func viewDidLoad() {
         super.viewDidLoad()
