@@ -32,11 +32,12 @@ class VC_Lembretes_Add: ViewControllerExtended {
     
         let i:String = xDate.date.description ?? ""
         let xDataFilterd:String = Regex_FindFirst(input: i, regex: ".+(?=[ ][+])")
+        let title:String = xTitle.text ?? ""
+        let content:String = xContent.text ?? ""
         
         
-        
-        
-        GenerateAlertBox(in_title: "a", in_message: xDataFilterd, in_ButtonText: "b")
+        DB_SendData(xtitle: title, xdate: xDataFilterd, xcontent: content)
+        // GenerateAlertBox(in_title: "a", in_message: xDataFilterd, in_ButtonText: "b")
     
     }
     
