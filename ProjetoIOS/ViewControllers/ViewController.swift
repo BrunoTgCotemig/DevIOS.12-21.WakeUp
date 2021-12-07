@@ -18,9 +18,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtSenha: UITextField!
     
-    var BD = UserDefaults.standard
-    let key = "WakeUP"
-    var user: [Usuario] = []
+    //var BD = UserDefaults.standard
+    //let key = "WakeUP"
+    //var user: [Usuario] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
