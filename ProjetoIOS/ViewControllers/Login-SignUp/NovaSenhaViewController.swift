@@ -24,13 +24,24 @@ class NovaSenhaViewController: UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
+    
+    
+    
+    
+    
     @IBAction func btnAtualizar(_ sender: Any) {
         
         if txtSenhaAtual.text == "" || txtSenhaNova.text == "" || txtConfirmarSenhaNova.text == "" {
             alert(title: "Erro", message: "Preencha todos os campos")
+            
+            
         } else if txtSenhaNova.text != txtConfirmarSenhaNova.text {
             alert(title: "Erro", message: "As novas senhas estao diferentes")
+            
+            
         } else {
+            
+            
             Auth.auth().currentUser?.updatePassword(to: txtSenhaNova.text!) { (error) in
                 if error != nil {
                     self.alert(title: "Erro", message: error!.localizedDescription)
