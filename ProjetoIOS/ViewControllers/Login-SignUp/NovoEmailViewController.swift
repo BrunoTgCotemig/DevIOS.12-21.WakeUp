@@ -19,6 +19,8 @@ class NovoEmailViewController: ViewControllerExtended {
     
     @IBAction func btnAtualizar(_ sender: Any) {
         
+        GenerateAlertBox(in_title: "'Sucesso!'", in_message: "Um email foi enviado com instruções para a alteração cadastral", in_ButtonText: "OK")
+        
         
         
     }

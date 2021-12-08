@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class PerfilViewController: UIViewController {
+class PerfilViewController: ViewControllerExtended {
 
     //var BD = UserDefaults.standard
     //let key = "WakeUP"
@@ -28,12 +28,34 @@ class PerfilViewController: UIViewController {
         
     }
     
-    @IBAction func btnLogout(_ sender: Any) {
+    internal func TryLogout(){
         
         do {
             try Auth.auth().signOut()
+            transicao()
+            GenerateAlertBox(in_title: "Logout bem sucedido", in_message: "Aperte (OK) para continuar ", in_ButtonText: "OK")
+        } catch let error{
+            GenerateAlertBox(in_title: "Error", in_message: error.localizedDescription, in_ButtonText: "OK")
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @IBAction func btnLogout(_ sender: Any) {
+        
+        do {
+            // try Auth.auth().signOut()
             //let data = try! JSONEncoder().encode("")
             //BD.set(data, forKey: self.key)
+            
+            TryLogout()
             
         } catch {
             alert(title: "Erro", message: "Erro ao tentar sair")

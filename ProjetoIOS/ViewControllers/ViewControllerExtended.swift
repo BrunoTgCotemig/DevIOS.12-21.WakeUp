@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+
 
 
 extension String {
@@ -41,7 +43,7 @@ class ViewControllerExtended: UIViewController {
         
     }
     
-
+    
     
     
     
