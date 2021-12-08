@@ -12,6 +12,7 @@
 		5E049729275FC26C00A1A02B /* ViewControllerExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E049728275FC26C00A1A02B /* ViewControllerExtended.swift */; };
 		5E04972B275FC44100A1A02B /* VC_Lembretes_Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E04972A275FC44100A1A02B /* VC_Lembretes_Add.swift */; };
 		5E04972D275FD40300A1A02B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E04972C275FD40300A1A02B /* TableViewCell.swift */; };
+		5E61EE9E2760FB82003E7E5C /* VC_Lembretes_EditAndDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E61EE9D2760FB82003E7E5C /* VC_Lembretes_EditAndDelete.swift */; };
 		5EA615B5275EACA900941EAE /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA615B4275EACA900941EAE /* GradientView.swift */; };
 		5EA615BD275EBFCD00941EAE /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EA615BC275EBFCD00941EAE /* logo.png */; };
 		DCA402DC273D3201005F2711 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA402DB273D3201005F2711 /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 		5E049728275FC26C00A1A02B /* ViewControllerExtended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtended.swift; sourceTree = "<group>"; };
 		5E04972A275FC44100A1A02B /* VC_Lembretes_Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Lembretes_Add.swift; sourceTree = "<group>"; };
 		5E04972C275FD40300A1A02B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		5E61EE9D2760FB82003E7E5C /* VC_Lembretes_EditAndDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Lembretes_EditAndDelete.swift; sourceTree = "<group>"; };
 		5EA615B4275EACA900941EAE /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		5EA615BC275EBFCD00941EAE /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		DCA402D8273D3201005F2711 /* ProjetoIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjetoIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 			children = (
 				5E049723275FB06500A1A02B /* VC_Lembretes.swift */,
 				5E04972A275FC44100A1A02B /* VC_Lembretes_Add.swift */,
+				5E61EE9D2760FB82003E7E5C /* VC_Lembretes_EditAndDelete.swift */,
 				5E049726275FBF6500A1A02B /* Model.swift */,
 				5E04972C275FD40300A1A02B /* TableViewCell.swift */,
 			);
@@ -264,6 +267,7 @@
 				5E049724275FB06500A1A02B /* VC_Lembretes.swift in Sources */,
 				DCAA014727432DE100BE0F01 /* NovoEmailViewController.swift in Sources */,
 				DCAA014A27432E0100BE0F01 /* NovaSenhaViewController.swift in Sources */,
+				5E61EE9E2760FB82003E7E5C /* VC_Lembretes_EditAndDelete.swift in Sources */,
 				5EA615B5275EACA900941EAE /* GradientView.swift in Sources */,
 				DCAA013E27430A0C00BE0F01 /* TabBarController.swift in Sources */,
 				DCAA013B274304CA00BE0F01 /* Constants.swift in Sources */,
