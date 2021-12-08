@@ -8,7 +8,7 @@
 import UIKit
 import Firebase
 
-class NovoEmailViewController: UIViewController {
+class NovoEmailViewController: ViewControllerExtended {
 
     @IBOutlet weak var txtEmailAtual: UITextField!
     @IBOutlet weak var txtEmailNovo: UITextField!
@@ -16,12 +16,6 @@ class NovoEmailViewController: UIViewController {
     //var BD = UserDefaults.standard
     //let key = "WakeUP"
     
-    func alert(title:String, message:String){
-        let alertController:UIAlertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let ok:UIAlertAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-        alertController.addAction(ok)
-        self.present(alertController, animated: true, completion: nil)
-    }
     
     @IBAction func btnAtualizar(_ sender: Any) {
         
