@@ -330,8 +330,19 @@
                     <view key="view" contentMode="scaleToFill" id="OFE-47-Erj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="i1.png" translatesAutoresizingMaskIntoConstraints="NO" id="1iC-ry-SKb">
+                                <rect key="frame" x="0.0" y="0.0" width="406" height="813"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="gku-5N-Zk9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1iC-ry-SKb" firstAttribute="top" secondItem="OFE-47-Erj" secondAttribute="top" id="7vi-6F-hC1"/>
+                            <constraint firstItem="1iC-ry-SKb" firstAttribute="leading" secondItem="gku-5N-Zk9" secondAttribute="leading" id="LAZ-rs-sIc"/>
+                            <constraint firstItem="gku-5N-Zk9" firstAttribute="trailing" secondItem="1iC-ry-SKb" secondAttribute="trailing" constant="8" id="XM5-Mw-rnT"/>
+                            <constraint firstItem="1iC-ry-SKb" firstAttribute="bottom" secondItem="gku-5N-Zk9" secondAttribute="bottom" id="qp6-Ub-niF"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Alarme" image="deskclock" catalog="system" id="qMq-Jf-K2N">
                         <color key="badgeColor" red="0.26274509800000001" green="0.0" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -339,7 +350,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U1B-Cw-jm6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="167" y="2127"/>
+            <point key="canvasLocation" x="166.66666666666669" y="2126.7857142857142"/>
         </scene>
         <!--Home-->
         <scene sceneID="U4t-5B-f0Z">
@@ -348,8 +359,19 @@
                     <view key="view" contentMode="scaleToFill" id="h31-gK-Eba">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="i2.png" translatesAutoresizingMaskIntoConstraints="NO" id="QZc-Ar-UsL">
+                                <rect key="frame" x="0.0" y="-260" width="462" height="1340"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="KJp-1D-fTW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QZc-Ar-UsL" firstAttribute="leading" secondItem="KJp-1D-fTW" secondAttribute="leading" id="AK0-1I-Goq"/>
+                            <constraint firstItem="QZc-Ar-UsL" firstAttribute="top" secondItem="h31-gK-Eba" secondAttribute="top" constant="-260" id="PPv-v3-u6c"/>
+                            <constraint firstAttribute="bottom" secondItem="QZc-Ar-UsL" secondAttribute="bottom" constant="-184" id="Ptw-uy-QLZ"/>
+                            <constraint firstAttribute="trailing" secondItem="QZc-Ar-UsL" secondAttribute="trailing" constant="-48" id="e1J-Bg-crO"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="niY-8L-8Y0">
                         <color key="badgeColor" red="0.26274509800000001" green="0.0" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -357,7 +379,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ng2-IE-FDs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-588" y="2127"/>
+            <point key="canvasLocation" x="-588.40579710144937" y="2126.7857142857142"/>
         </scene>
         <!--Lembrete-->
         <scene sceneID="3N9-K3-Z5f">
@@ -1001,6 +1023,8 @@ TGVtYnJldGVzEDo
     <resources>
         <image name="deskclock" catalog="system" width="128" height="124"/>
         <image name="house" catalog="system" width="128" height="106"/>
+        <image name="i1.png" width="334" height="604"/>
+        <image name="i2.png" width="626" height="1114"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="logo wup" width="250" height="157"/>
         <image name="paperplane" catalog="system" width="128" height="118"/>
